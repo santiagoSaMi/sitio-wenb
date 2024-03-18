@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <link rel="stylesheet" href="formulario.css">
+        <title>BLOG</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <label for="search">Search:</label>
+                <input type="text" name="search" class="search">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="">Sell/Suppliers</a></li>
+                    <li><a href="formulario.html">Blog</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="" class="login"><img src="images/login.png" alt="lg" class="icon">LOGIN</a></li>
+                    <li><a href=""><button class="black-button">GET STARTED</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="highlight">FORM</h1>
+                <form action="send" method="POST" class="form">
+                    <div class="element">
+                        <label for="nam">NAME:</label>
+                        <input type="text" id="nam" name="nam" class="search">
+                    </div>
+
+                    <div class="element">
+                        <label for="cel">CELLPHONE NUMBER:</label>
+                        <input type="number" id="cel" name="cel" class="search">
+                    </div>
+
+                    <div class="element">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email" class="search">
+                    </div>
+
+                    <div class="element">
+                        <label for="subject">MOTIVE:</label>
+                        <input type="text" id="subject" name="subject" class="search">
+                    </div>
+                    
+                    <div class="element">
+                        <label for="msg">MESSAGE:</label>
+                        <textarea name="msg" id="msg" rows="5" class="search"></textarea>
+                    </div>
+                    
+                    <button type="submit" value="enviar" class="grey-button">SEND</button>
+                </form>
+            </section>
+            <a href="index.html"><button class="black-button">RETURN TO MAIN PAGE</button></a>
+        </main>
+    </body>
+</html>

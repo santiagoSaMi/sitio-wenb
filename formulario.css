@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0 5%;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: min-content;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.form {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: end;
+}
+
+.element {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.highlight {
+    color: black;
+    text-decoration: solid;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.grey-button {
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.grey-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.black-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.icon {
+    width: 25px;
+}
+
+.search {
+    background-color: white;
+    border-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
