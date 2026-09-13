@@ -1,0 +1,371 @@
+.win98-desktop {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #008080;
+  padding: 24px;
+  padding-bottom: 56px;
+  position: relative;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ---------- desktop icons ---------- */
+.desktop-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 84px;
+  flex-shrink: 0;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  padding: 6px 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.desktop-icon .icon-emoji {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.desktop-icon .label {
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 1.2;
+}
+
+.desktop-icon.selected {
+  outline: 1px dotted #fff;
+  background: rgba(0, 0, 128, 0.45);
+}
+
+/* ---------- main window ---------- */
+.win98-window-wrap {
+  flex: 1 1 auto;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.win98-window-wrap.maximized {
+  max-width: 100%;
+}
+
+.tab-panel {
+  margin-top: -1px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.about-stats {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.about-stats li {
+  padding: 6px 0;
+}
+
+.timeline-item {
+  margin-bottom: 14px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item h4 {
+  margin: 0 0 2px;
+  font-size: 13px;
+}
+
+.timeline-meta {
+  font-size: 11px;
+  font-style: italic;
+  margin: 0 0 6px;
+}
+
+.timeline-item ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+/* ---------- skills ---------- */
+.skills-group {
+  margin-top: 16px;
+}
+
+.skills-tree {
+  max-height: none;
+}
+
+/* ---------- projects ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-kind {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-desc {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.project-stack {
+  margin: 0;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.project-card button {
+  align-self: flex-start;
+}
+
+/* ---------- start menu ---------- */
+.start-menu {
+  position: fixed;
+  left: 2px;
+  bottom: 40px;
+  width: 200px;
+  z-index: 50;
+}
+
+.start-menu .tree-view a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ---------- taskbar ---------- */
+.taskbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 36px;
+  background: #c0c0c0;
+  border-top: 2px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 4px;
+  z-index: 40;
+}
+
+.start-button {
+  font-weight: bold;
+}
+
+.taskbar-task {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskbar-clock {
+  margin-left: auto;
+  border: 1px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #c0c0c0;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .win98-desktop {
+    flex-direction: column;
+  }
+  .desktop-icons {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .win98-window-wrap {
+    max-width: 100%;
+  }
+}
+
+/* ---------- Windows 98 pixel icons ---------- */
+.win98-icon {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  filter: drop-shadow(1px 1px 0 #000);
+}
+
+.win98-icon::before,
+.win98-icon::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.win98-icon-computer::before {
+  left: 3px;
+  top: 3px;
+  width: 26px;
+  height: 19px;
+  background: #c0c0c0;
+  border: 3px solid #000;
+  box-shadow: inset 3px 3px #fff, inset -3px -3px #808080;
+}
+.win98-icon-computer::after {
+  left: 10px;
+  top: 22px;
+  width: 13px;
+  height: 5px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+  box-shadow: 5px 4px 0 -1px #000, -5px 4px 0 -1px #000;
+}
+
+.win98-icon-briefcase::before {
+  left: 2px;
+  top: 9px;
+  width: 28px;
+  height: 19px;
+  background: #c08040;
+  border: 3px solid #000;
+  box-shadow: inset 3px 3px #e0a060, inset -3px -3px #804000;
+}
+.win98-icon-briefcase::after {
+  left: 10px;
+  top: 4px;
+  width: 12px;
+  height: 8px;
+  border: 3px solid #000;
+  border-bottom: 0;
+}
+
+.win98-icon-toolbox::before {
+  left: 2px;
+  top: 10px;
+  width: 28px;
+  height: 18px;
+  background: #d0d0d0;
+  border: 3px solid #000;
+  box-shadow: inset 3px 3px #fff, inset -3px -3px #808080;
+}
+.win98-icon-toolbox::after {
+  left: 9px;
+  top: 4px;
+  width: 14px;
+  height: 8px;
+  border: 3px solid #000;
+  border-bottom: 0;
+  background: #c0c0c0;
+}
+
+.win98-icon-floppy::before {
+  left: 4px;
+  top: 2px;
+  width: 24px;
+  height: 28px;
+  background: #3b5b9a;
+  border: 3px solid #000;
+  box-shadow: inset 3px 3px #7696d0, inset -3px -3px #1c2e5b;
+}
+.win98-icon-floppy::after {
+  left: 9px;
+  top: 18px;
+  width: 14px;
+  height: 8px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.win98-icon-mail::before {
+  left: 2px;
+  top: 7px;
+  width: 28px;
+  height: 21px;
+  background: #fff;
+  border: 3px solid #000;
+  box-shadow: inset 3px 3px #d0d0d0;
+}
+.win98-icon-mail::after {
+  left: 5px;
+  top: 8px;
+  width: 22px;
+  height: 15px;
+  border-bottom: 3px solid #000;
+  transform: skewY(-30deg) rotate(-1deg);
+}
+
+.win98-icon-network::before {
+  left: 2px;
+  top: 3px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #1684c4;
+  border: 3px solid #000;
+  box-shadow: inset 5px 0 #7ed0f0, inset -4px 0 #075080;
+}
+.win98-icon-network::after {
+  left: 7px;
+  top: 14px;
+  width: 17px;
+  height: 3px;
+  background: #fff;
+  box-shadow: 0 -6px 0 #fff, 0 6px 0 #fff;
+}
+
+.windows-logo {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 8px);
+  gap: 2px;
+  margin-right: 5px;
+  vertical-align: -3px;
+  transform: skewY(-8deg);
+}
+.windows-logo i { display: block; width: 8px; height: 8px; background: #000080; }
+.windows-logo i:nth-child(1) { background: #f00; }
+.windows-logo i:nth-child(2) { background: #0a0; }
+.windows-logo i:nth-child(3) { background: #00f; }
+.windows-logo i:nth-child(4) { background: #ff0; }
+
+.site-footer {
+  position: fixed;
+  right: 8px;
+  bottom: 43px;
+  color: #fff;
+  font-size: 11px;
+  text-shadow: 1px 1px #000;
+  z-index: 20;
+}
+.site-footer a { color: #fff; }
+
+@media (max-width: 700px) {
+  .site-footer {
+    position: static;
+    margin: 0 0 48px;
+    align-self: center;
+    text-align: center;
+  }
+}
