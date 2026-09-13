@@ -1,45 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UFT-8">
-        <link rel="stylesheet" href="styles.css">
-        <title>LOOTBEAR</title>
-    </head>
-    <body>
-        <header>
-            <img src="images/logo.png" alt="logo">
-            <div>
-                <label for="search">Search:</label>
-                <input type="text" name="search" class="search">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Rent</a></li>
-                    <li><a href="">Sell</a></li>
-                    <li><a href="">Sell/Suppliers</a></li>
-                    <li><a href="formulario.html">Blog</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="" class="login"><img src="images/login.png" alt="lg" class="icon">LOGIN</a></li>
-                    <li><a href=""><button class="black-button">GET STARTED</button></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <p class="upper-txt"><img src="images/usa.png" alt="" class="icon"><span class="highlight">73,445,866 </span> HOURSE USERES HAVE BEEN RENTING SKINS</p>
-                <h1 class="highlightTitle"><span>BUY, SELL OR RENT</span><br>CSGO SKINS</h1>
-                <p class="highlightSubtitle">NETFLIX FOR CS:GO SKINS</p>
-                <p class="grey-txt">Use Lootbear's skins inventory valued at $1.5m + freely.</p>
-                <p class="grey-txt">Withdraw premium skins. <span class="highlight">Starting at $14.99/m.</span></p>
-                <div>
-                    <a href=""><button class="black-button"><img src="images/btnst.png" alt="clickst" class="icon">TRY IT FOR A WEEK</button></a>
-                    <a href=""><button class="grey-button"><img src="images/btnnd.png" alt="clicknd" class="icon">SELL YOUR SKINS</button></a>
-                </div>
-            </section>
-            <img src="images/osoconesmoquin.png" alt="mainImg" class="mainImg">
-        </main>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago Sabogal Millan — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bubble-field" id="bubbleField"></div>
+
+<div class="nav-wrap">
+  <nav>
+    <a href="#top" class="brand">Santiago</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/santiagoSaMi" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</div>
+
+<section id="top" class="hero container">
+  <h1>Santiago Sabogal Millan</h1>
+  <p class="tagline">Computer Engineering student building things from JavaFX desktop apps to serverless architectures.</p>
+  <div class="flags" aria-hidden="true">🇨🇴 🫧 🇯🇵</div>
+  <div class="hero-ctas">
+    <a class="btn btn-primary" href="https://github.com/santiagoSaMi" target="_blank" rel="noopener">Visit my GitHub</a>
+    <a class="btn btn-ghost" href="#projects">See my projects</a>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <span class="eyebrow-badge">About me</span>
+  <h2 class="section-title">Engineering, in and out of class</h2>
+  <p class="section-lede">I'm a Colombian student who moves comfortably between coursework and side projects.</p>
+
+  <div class="about-grid">
+    <div class="glass about-copy">
+      <p>I study Computer Engineering at Universidad de La Sabana, in Colombia, with coursework that also stretches into global business and comparative management. Outside the classroom I'm usually the one building the tool the group project actually needs.</p>
+      <p>In 2026 I went on exchange to Saitama University in Japan through the STEPS program, supported by a JASSO scholarship. Living there sharpened my interest in how process, discipline, and technology come together — something I now bring back into every project I build, from desktop apps to cloud architectures.</p>
+      <p>When I'm not studying or coding, you'll find me following volleyball, playing video games (Nintendo and Xbox both have a place in my heart), or exploring anything to do with Japanese language and culture.</p>
+    </div>
+    <div class="stat-stack">
+      <div class="glass stat-card">
+        <div class="stat-icon">🎓</div>
+        <div>
+          <span class="stat-num">Universidad de La Sabana</span>
+          <span class="stat-label">Computer Engineering student</span>
+        </div>
+      </div>
+      <div class="glass stat-card">
+        <div class="stat-icon">🇯🇵</div>
+        <div>
+          <span class="stat-num">Saitama University</span>
+          <span class="stat-label">STEPS exchange · JASSO scholar</span>
+        </div>
+      </div>
+      <div class="glass stat-card">
+        <div class="stat-icon">💻</div>
+        <div>
+          <span class="stat-num">14 repositories</span>
+          <span class="stat-label">and counting, on GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="leaf-divider" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,30 C240,70 480,0 720,25 C960,50 1200,10 1440,35 L1440,70 L0,70 Z" fill="rgba(255,255,255,0.18)"></path>
+</svg>
+
+<section id="skills" class="container">
+  <span class="eyebrow-badge">Toolbox</span>
+  <h2 class="section-title">What I build with</h2>
+  <p class="section-lede">A mix of desktop, web, data, and cloud tools picked up across coursework and personal projects.</p>
+  <div class="glass" style="padding:32px;">
+    <div class="bubble-tags">
+      <span class="tag">Java</span>
+      <span class="tag">JavaFX</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">React</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Python</span>
+      <span class="tag leaf-tag">Dask</span>
+      <span class="tag leaf-tag">Prefect</span>
+      <span class="tag">Docker</span>
+      <span class="tag">AWS Lambda</span>
+      <span class="tag">Supabase</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">Git &amp; GitHub</span>
+      <span class="tag">Typst</span>
+      <span class="tag">HTML &amp; CSS</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="container">
+  <span class="eyebrow-badge">Projects</span>
+  <h2 class="section-title">Things I've shipped and studied</h2>
+  <p class="section-lede">A mix of GitHub repositories, university coursework, and self-initiated concepts.</p>
+
+  <div class="project-grid">
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#fff3d6,#ffd98a);">🏦</div>
+        <div>
+          <h3>JavaFX Bank Management System</h3>
+          <div class="project-kind">GitHub repository</div>
+        </div>
+      </div>
+      <p class="desc">A desktop banking application built with Java and JavaFX (Scene Builder). Manages clients, accounts, and transactions — deposits, withdrawals, transfers, and password changes — through a multi-screen interface.</p>
+      <div class="project-stack">
+        <span class="chip">Java</span><span class="chip">JavaFX</span><span class="chip">Scene Builder</span>
+      </div>
+      <a class="project-link" href="https://github.com/santiagoSaMi/javafx-bank-management-system" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#ffe1ea,#ffb6c9);">🍸</div>
+        <div>
+          <h3>Random Cocktail</h3>
+          <div class="project-kind">GitHub repository</div>
+        </div>
+      </div>
+      <p class="desc">A responsive cocktail discovery app built with vanilla JavaScript, pulling live data from TheCocktailDB through a REST API.</p>
+      <div class="project-stack">
+        <span class="chip">JavaScript</span><span class="chip">REST API</span><span class="chip">CSS</span>
+      </div>
+      <a class="project-link" href="https://github.com/santiagoSaMi/random-cocktail" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#e4f8ff,#a9e6ff);">🛵</div>
+        <div>
+          <h3>Chibchombia</h3>
+          <div class="project-kind">University project · rebuild in React</div>
+        </div>
+      </div>
+      <p class="desc">A restaurant delivery platform for a Web Applications Development course: a REST backend, a customer-facing menu and cart app, and an order management app with authentication and status tracking, fully dockerized.</p>
+      <div class="project-stack">
+        <span class="chip">React</span><span class="chip">REST API</span><span class="chip">Docker</span>
+      </div>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#e8f9e0,#bdeb9a);">🚨</div>
+        <div>
+          <h3>SIREC — Emergency Response Architecture</h3>
+          <div class="project-kind">University project · Advanced Architecture Patterns</div>
+        </div>
+      </div>
+      <p class="desc">A serverless architecture for coordinating emergency response after a simulated earthquake: four dockerized microservices on AWS Lambda behind API Gateway, a Next.js frontend on Vercel, and Supabase/PostGIS persistence with row-level security and canary deployments.</p>
+      <div class="project-stack">
+        <span class="chip">AWS Lambda</span><span class="chip">Supabase</span><span class="chip">PostGIS</span><span class="chip">Next.js</span>
+      </div>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#eef0ff,#c9cdff);">🧮</div>
+        <div>
+          <h3>Distributed Data Cleaning Pipeline</h3>
+          <div class="project-kind">University workshop · Distributed Systems</div>
+        </div>
+      </div>
+      <p class="desc">An out-of-core cleaning pipeline for 300,000 intentionally dirty synthetic records, run on a Dask cluster (one scheduler, three workers) inside Docker Compose and orchestrated with Prefect, writing clean output to Parquet.</p>
+      <div class="project-stack">
+        <span class="chip">Dask</span><span class="chip">Prefect</span><span class="chip">Docker Compose</span><span class="chip">Parquet</span>
+      </div>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#e4fff5,#a6f2d6);">🍽️</div>
+        <div>
+          <h3>QR Restaurant Ordering</h3>
+          <div class="project-kind">Personal concept project</div>
+        </div>
+      </div>
+      <p class="desc">A concept for a QR-code restaurant ordering system inspired by Saizeriya's setup in Japan, designed around React/Vite, Fastify, PostgreSQL with Prisma, Redis, and real-time updates via Socket.io.</p>
+      <div class="project-stack">
+        <span class="chip">React</span><span class="chip">Fastify</span><span class="chip">Prisma</span><span class="chip">Socket.io</span>
+      </div>
+    </div>
+
+    <div class="glass project-card">
+      <div class="project-top">
+        <div class="project-icon" style="background:linear-gradient(160deg,#f1f1f1,#d6d6d6);">🖥️</div>
+        <div>
+          <h3>HTML/CSS Landing Page</h3>
+          <div class="project-kind">GitHub repository</div>
+        </div>
+      </div>
+      <p class="desc">A front-end clone of a marketplace landing page, built to practice structuring layouts and styling purely with HTML and CSS.</p>
+      <div class="project-stack">
+        <span class="chip">HTML</span><span class="chip">CSS</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<svg class="leaf-divider" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,40 C240,5 480,60 720,30 C960,0 1200,55 1440,20 L1440,70 L0,70 Z" fill="rgba(255,255,255,0.14)"></path>
+</svg>
+
+<section id="contact" class="container">
+  <div class="glass contact-panel">
+    <span class="eyebrow-badge">Get in touch</span>
+    <h2>Let's build something together</h2>
+    <p>The best place to see my latest code, or to reach out about a project, is my GitHub profile.</p>
+    <a class="btn btn-primary" href="https://github.com/santiagoSaMi" target="_blank" rel="noopener">github.com/santiagoSaMi</a>
+  </div>
+</section>
+
+<footer>
+  <p>Made with 🫧 for <a href="https://github.com/santiagoSaMi" target="_blank" rel="noopener">santiagoSaMi</a></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
